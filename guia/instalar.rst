@@ -53,19 +53,19 @@ Descargamos las reglas de modsecurity.::
 
 	# cd ..
 
-Le decimos al apache que solo carge las reglas base, tiene mas...!!!.:
+Le decimos al apache que solo carge las reglas base, tiene mas...!!!.::
 
 	# vi conf/httpd.conf
 	Include modsecurity-crs/*.conf
 	Include modsecurity-crs/base_rules/*.conf
 
-.:
+.::
 
 	# service httpd restart
 
 Listo si vemos los logs modsec_audit.log 
 
-Para estar seguros que cargo el modsecurity vemos el log.:
+Para estar seguros que cargo el modsecurity vemos el log.::
 
 	# tail /var/log/httpd/error_log
 	Starting httpd: [Sat Oct 22 15:26:09 2016] [notice] SELinux policy enabled; httpd running as context unconfined_u:system_r:httpd_t:s0
@@ -84,7 +84,7 @@ Para estar seguros que cargo el modsecurity vemos el log.:
 
 Ya aquí tenemos el módulo de ModSecurity ejecutándose pero solo en modo DETECTION_ONLY
 
-Tambien se puede ver el log de modsecurity que se va registrar todo.:
+Tambien se puede ver el log de modsecurity que se va registrar todo.::
 
 	# tail -f /var/log/modsec_audit.log &
 

@@ -7,13 +7,13 @@ Esto es basicamente igual cuando realizamos la instalacion, que por defecto qued
 
 	# cp unicode.mapping /etc/httpd/conf.d/
 
-.:
+.::
 
 	# vi /etc/httpd/conf/httpd.conf
 	LoadModule unique_id_module modules/mod_unique_id.so
 	LoadModule security2_module modules/mod_security2.so
 
-.:
+.::
 
 	# vi /etc/httpd/conf/prueba.conf
 	<VirtualHost *:80>
@@ -24,12 +24,12 @@ Esto es basicamente igual cuando realizamos la instalacion, que por defecto qued
 		CustomLog logs/prueba.com-access_log common
 	</VirtualHost>
 
-Si no se carga el modulo de mod_unique_id en le log de errores del virtual host lo veras.:
+Si no se carga el modulo de mod_unique_id en le log de errores del virtual host lo veras.::
 
 	# tail -f /var/log/httpd/prueba.com-error_log 
 	[Sat Oct 22 13:27:24 2016] [error] ModSecurity: ModSecurity requires mod_unique_id to be installed.
 
-Para estar seguros que cargo el modsecurity vemos el log.:
+Para estar seguros que cargo el modsecurity vemos el log.::
 
 	# tail /var/log/httpd/error_log
 	Starting httpd: [Sat Oct 22 15:26:09 2016] [notice] SELinux policy enabled; httpd running as context unconfined_u:system_r:httpd_t:s0
@@ -49,7 +49,7 @@ Para estar seguros que cargo el modsecurity vemos el log.:
 Ya aquí tenemos el módulo de ModSecurity ejecutándose pero solo en modo DETECTION_ONLY
 
 
-Tambien se puede ver el log de modsecurity.:
+Tambien se puede ver el log de modsecurity.::
 
 	# tail -f /var/log/modsec_audit.log &
 
