@@ -9,6 +9,7 @@ Mod Security trabaja con sets de reglas especializadas y personalizables, que po
 * [Configurar WAF para todos los virtualhost](guia/waffallvirtualhost.rst)
 * [Configurar WAF para un solo virtualhost](guia/waffvirtualhost.rst)
 * [Hacer pruebas](guia/pruebas.rst)
+* [Configurar WAF mod_evasive](guia/mod_evasive.rst)
 
 
 
