@@ -63,9 +63,14 @@ Requirido
 ::
 
 	# visudo
+    # Documentar esta linea
+    # Defaults	requiretty
+	# o
+	Defaults:apache !requiretty
+
 	## Allow root to run any commands anywhere
 	root    ALL=(ALL)       ALL
-	apache  ALL=(ALL) NOPASSWD:     ALL
+	apache  ALL=(ALL) NOPASSWD:     /usr/local/bin/script_mod_evasive.sh
 	Defaults:apache !requiretty
 
 Probamos 
