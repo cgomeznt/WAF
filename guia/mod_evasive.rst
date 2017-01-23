@@ -38,11 +38,11 @@ APACHE v2.0
 
 	<IfModule mod_evasive20.c>
 		DOSHashTableSize    3097
-		DOSPageCount        2
-		DOSSiteCount        50
-		DOSPageInterval     1
-		DOSSiteInterval     1
-		DOSBlockingPeriod   10
+		DOSPageCount        15
+		DOSSiteCount        150
+		DOSPageInterval     2
+		DOSSiteInterval     2
+		DOSBlockingPeriod   2700
 	</IfModule>
 
 Optionally you can also add the following directives::
@@ -54,7 +54,7 @@ Optionally you can also add the following directives::
 You will also need to add this line if you are building with dynamic support:
 
 
-Requirido
+Requerido
 ------------
 ::
 
