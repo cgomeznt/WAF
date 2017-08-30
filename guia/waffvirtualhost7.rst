@@ -20,6 +20,11 @@ y creamos nuestros virtual hosts y lo deshabilitamos en mod_security.::
 		ServerName prueba.com
 		ErrorLog logs/prueba.com-error_log
 		CustomLog logs/prueba.com-access_log common
+		ErrorDocument 404 /error.html
+		ErrorDocument 500 /error.html
+		ErrorDocument 502 /error.html
+		ErrorDocument 503 /error.html
+		ErrorDocument 504 /error.html
 		<IfModule mod_security2.c>
 			# Default recommended configuration
 			SecRuleEngine On
