@@ -5,11 +5,13 @@ Las características principales de ModSecurity son su capacidad de log y filtra
 Mod Security trabaja con sets de reglas especializadas y personalizables, que podemos cargar o excluir según virtualhost o directorio. Estas reglas trabajan filtrando ataques por Cross Scripting o XSS, inyecciones SQL, anomalías en protocolos, Robots maliciosos, Trojanos, inclusión de archivos (LFI), etc y recientemente se incorpora un set de reglas especificas (slr_rules) para CMS como Joomla, Wordpress o PHPBB.
 
 
-* [Instalar WAF en CentOS](guia/instalar.rst)
+* [Instalar WAF en CentOS 6](guia/instalar.rst)
 * [Configurar WAF para todos los virtualhost](guia/waffallvirtualhost.rst)
 * [Configurar WAF para un solo virtualhost](guia/waffvirtualhost.rst)
 * [Hacer pruebas](guia/pruebas.rst)
 * [Configurar WAF mod_evasive](guia/mod_evasive.rst)
+* [Instalar WAF en CentOS 7](guia/instalar7.rst)
+* [Configurar WAF Centos 7 para un solo virtualhost](guia/waffvirtualhost7.rst)
 
 
 
