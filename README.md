@@ -6,12 +6,14 @@ Mod Security trabaja con sets de reglas especializadas y personalizables, que po
 
 
 * [Instalar WAF en CentOS 6](guia/instalar.rst)
+* [Compilar Instalar WAF en CentOS 7](guia/Compilar_Instalar_ModSecurity.rst)
 * [Configurar WAF para todos los virtualhost](guia/waffallvirtualhost.rst)
 * [Configurar WAF para un solo virtualhost](guia/waffvirtualhost.rst)
 * [Hacer pruebas](guia/pruebas.rst)
 * [Configurar WAF mod_evasive](guia/mod_evasive.rst)
 * [Instalar WAF en CentOS 7](guia/instalar7.rst)
 * [Configurar WAF Centos 7 para un solo virtualhost](guia/waffvirtualhost7.rst)
+
 
 
 
